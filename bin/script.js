@@ -53,8 +53,42 @@ certItems.forEach((item) => {
 });
 // Auto-scrolling projects carousel
 const track = document.getElementById("projects-track");
+const dotsContainer = document.getElementById("projects-dots");
 
-if (track) {
+if (track && dotsContainer) {
+    const cards = track.querySelectorAll(".project-card");
+
+    // build dots
+    cards.forEach((_, i) => {
+        const dot = document.createElement("span");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+            const card = cards[i];
+            track.scrollTo({ left: card.offsetLeft - 20, behavior: "smooth" });
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll("span");
+
+    // update active dot on scroll
+    track.addEventListener("scroll", () => {
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
+        cards.forEach((card, i) => {
+            const distance = Math.abs(card.offsetLeft - track.scrollLeft);
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestIndex = i;
+            }
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === closestIndex);
+        });
+    });
+
     // --- Auto-scroll ---
     let autoScroll = true;
     const scrollSpeed = 0.5; // pixels per frame — increase for faster
