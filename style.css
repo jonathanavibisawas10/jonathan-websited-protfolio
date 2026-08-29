@@ -616,7 +616,7 @@ body {
 
 /* Right side */
 .contact-form-box {
-    background: #00ffaa;
+    background: #00FFAA;
     border-radius: 15px;
     padding: 35px;
 }
@@ -659,7 +659,7 @@ body {
     align-self: flex-start;
     padding: 12px 30px;
 
-    background: #0a0a0a;
+    background: #1d1c1c;
     color: #00ffaa;
 
     border: none;
@@ -818,7 +818,7 @@ body {
 }
 
 
-
+/*! Responsibel Code Here */
 @media (max-width: 768px) {
     .footer-top {
         grid-template-columns: 1fr;
@@ -968,5 +968,42 @@ body {
         width: 100%;
         max-width: 220px;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 50px 5%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .about-box {
+        width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .about-box p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .about-box ul {
+        line-height: 1.8;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
     }
 }

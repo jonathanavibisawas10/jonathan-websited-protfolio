@@ -7,7 +7,7 @@ I have a keen eye for design and a deep commitment to creating seamless, user-fr
 
 I'm currently looking for opportunities to contribute as a web developer, collaborate with a team, and keep building innovative solutions that make a difference.`;
 
-function typeText(element, text, speed = 20) {
+function typeText(element, text, speed = 12) {
     let i = 0;
     element.textContent = "";
 
