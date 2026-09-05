@@ -7,10 +7,264 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Jonathan Avi - Portfolio</title>
-    <link rel="icon" type="image/png" href="/images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../images/Logo.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script src="../src/script.js" defer></script>
+    <!-- * Header Section * -->
+    <header class="header">
+        <div class="logo">
+            <h1><span>jonathan</span>_avibis</h1>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="availability">
+            <span class="status-dot"></span>
+            Available Now
+    </header>
+    <section class="home" id ="home">
+
+    <div class="home-card">
+
+        <!-- Information -->
+        <div class="home-info">
+            <p>Hello, I'm</p>
+
+            <h1>Jonathan Avi Biswas</h1>
+
+            <h3><span>Web</span> Developer </h3>
+
+            <p>
+                i am finding a job as a web developer. I have experience in <span>HTML, CSS, JavaScript, React, Node.js, and other web development technologies</span>. I am passionate about creating beautiful and functional websites that provide a great user experience.
+            </p>
+
+            <button>View My Projects</button>
+        </div>
+
+        <!-- Photo -->
+        <div class="photo-area">
+            <img src="../images/profile.jpeg" alt="Jonathan">
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="about">
+
+    <h2 class="about-title">About <span>Me</span></h2>
+
+    <div class="about-grid">
+
+        <!-- Left box: info in text -->
+        <div class="about-box about-text-box">
+            <p id="about-text">
+
+            </p>
+        </div>
+
+        <!-- Right box: skills and education -->
+        <div class="about-box">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Python</li>
+                <li>Graphics Design</li>
+                <li>Photography</li>
+                <br>
+                <h3>Language</h3>
+                <li>English</li>
+                <li>Bengali</li>
+                <li>Hindi</li>
+            </ul>
+        </div>
+        <div class="cert-section">
+    <h3>Certifications & Achievements</h3>
+    <div class="cert-grid">
+            <div class="cert-item">
+                <span class="cert-icon">🏆</span>
+                <p>Full Stack Web Development — Programming Hero (2026)</p>
+            </div>
+            <div class="cert-item">
+                <span class="cert-icon">🏆</span>
+                <p>Certification(2026)</p>
+            </div>
+            <div class="cert-item">
+                <span class="cert-icon">🏆</span>
+                <p>Certification(2026)</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+<section class="projects" id="projects">
+
+    <h2 class="projects-title">Projects</h2>
+    
+    <div class="projects-wrapper">
+    <button class="projects-arrow prev" id="prev-btn">&#10094;</button>
+
+    <div class="projects-track" id="projects-track">
+
+            <div class="project-card"
+                 data-title="Project One"
+                 data-desc="A longer description of Project One goes here — what it does, what problems it solves, and what makes it worth showing off."
+                 data-img="#"
+                 data-link="#">
+                <img src="../images/project-1.png" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio website built with HTML, CSS, JavaScript and TypeScript.</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Project Two"
+                 data-desc="A longer description of Project Two goes here — what it does, what problems it solves, and what makes it worth showing off."
+                 data-img="#"
+                 data-link="#">
+                <img src="../images/project-2.png" alt="Project 2">
+                <h3>Task Manager</h3>
+                <p>A simple productivity app for creating, completing and deleting daily tasks.</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Project Three"
+                 data-desc="A longer description of Project Three goes here — what it does, what problems it solves, and what makes it worth showing off."
+                 data-img="#"
+                 data-link="#">
+                <img src="../images/project-3.png" alt="Project 3">
+                <h3>Expense Tracker</h3>
+                <p>An application for recording expenses and keeping track of personal spending.</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Project Four"
+                 data-desc="A longer description of Project Four goes here — what it does, what problems it solves, and what makes it worth showing off."
+                 data-img="#"
+                 data-link="#">
+                <img src="../images/project-4.png" alt="Project 4">
+                <h3>Quiz Application</h3>
+                <p>An interactive quiz app with multiple questions, answers and a final score.</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Project Five"
+                 data-desc="A longer description of Project Five goes here — what it does, what problems it solves, and what makes it worth showing off."
+                 data-img="#"
+                 data-link="#">
+                <img src="../images/project-5.png" alt="Project 5">
+                <h3>Blog Website</h3>
+                <p>A responsive blog platform with article cards, categories and individual post pages.</p>
+            </div>
+
+         </div>
+
+    <button class="projects-arrow next" id="next-btn">&#10095;</button>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="contact-title">Contact <span>Information</span></h2>
+
+    <div class="contact-grid">
+
+        <!-- Left: Info + Map -->
+        <div class="contact-info">
+            <div class="contact-detail">
+                <span class="contact-icon">📧</span>
+                <p>jonathan.avibd24@gmail.com</p>
+            </div>
+            <div class="contact-detail">
+                <span class="contact-icon">📱</span>
+                <p>+880 1768454858</p>
+            </div>
+            <div class="contact-detail">
+                <span class="contact-icon">📍</span>
+                <p>Khulna, Bangladesh</p>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837.7198972586118!2d89.51010000735491!3d22.897143889842535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9b00351fd4a3%3A0xb91ffe2261c0fc48!2z4Kar4KeB4Kay4Kas4Ka-4Kec4Ka_4KaX4KeH4KafIOCmruCni-CnnA!5e0!3m2!1sen!2sbd!4v1787913860703!5m2!1sen!2sbd""
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-box">
+            <h3>Send a Message</h3>
+
+            <form id="contact-form" netlify>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+            <p class="form-status" id="form-status"></p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+            <h3><span>jonathan</span>_avibis</h3>
+            <p>Full Stack Web Developer building clean, functional, and user-friendly websites.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <a href="https://github.com/jonathanavibisawas10" target="_blank" aria-label="GitHub">G</a>
+                <a href="https://www.instagram.com/jonathan.ab3011?igsi=eWtubm0wMXJmdHY0" target="_blank" aria-label="Instagram">IN</a>
+                <a href="https://www.facebook.com/share/1BbpLsCyD7/" target="_blank" aria-label="Facebook">F</a>
+                <a href="mailto:jonathan.avi30@hotmail.com" aria-label="Email">M</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Project Modal -->
+<div class="project-modal" id="project-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <img id="modal-img" src="" alt="">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <a id="modal-link" href="#" target="_blank">View Project</a>
+    </div>
+</div>
+
 </body>
 </html>
